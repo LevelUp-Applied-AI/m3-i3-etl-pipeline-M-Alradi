@@ -1,0 +1,12 @@
+{
+    "timestamp": "2026-04-01T14:25:43.888995",
+    "total_records_checked": 100,
+    "checks_passed": 99,
+    "checks_failed": 1,
+    "flagged_outliers": [
+        {
+            "customer_id": 23,
+            "total_revenue": 25361.5
+        }
+    ]
+}

@@ -3,7 +3,8 @@
 
 ## Overview
 
-<!-- What does this pipeline do? -->
+This ETL pipeline extracts order, customer, product, and order item data from a PostgreSQL database, transforms it into a customer-level summary, performs data quality checks, and loads the results back into the database and as a CSV file.  
+It provides analytics such as total revenue, average order value, and top product category per customer.
 
 ## Setup
 
@@ -20,7 +21,14 @@
    psql -h localhost -U postgres -d amman_market -f schema.sql
    psql -h localhost -U postgres -d amman_market -f seed_data.sql
    ```
-3. Install dependencies: `pip install -r requirements.txt`
+   or use 
+
+   ```bash
+   docker exec -i postgres-m3-int psql -U postgres -d amman_market < schema.sql
+   docker exec -i postgres-m3-int psql -U postgres -d amman_market < seed_data.sql  
+   ```
+3. Create a virtual environment: `python -m venv .venv`
+4. Install dependencies: `pip install -r requirements.txt`
 
 ## How to Run
 
@@ -30,12 +38,27 @@ python etl_pipeline.py
 
 ## Output
 
-<!-- What does customer_analytics.csv contain? -->
+1. The pipeline produces:
+- customer_analytics table in PostgreSQL with columns:
+   - customer_id
+   - customer_name
+   - total_orders — count of distinct orders
+   - total_revenue — sum of all order line totals
+   - avg_order_value — average revenue per order
+   - top_category — most purchased product category
+
+2. output/customer_analytics.csv — CSV export of the same customer summary.
 
 ## Quality Checks
 
-<!-- What validations are performed and why? -->
+- The following validations are performed on the transformed data:
 
+   - No nulls in customer_id or customer_name — ensures each record is identifiable.
+   - total_orders > 0 — confirms that only customers with actual orders are included.
+   - total_revenue > 0 — ensures meaningful revenue values.
+   - No duplicate customer_id values — maintains one row per customer.
+
+If any critical check fails, the pipeline raises an error to prevent loading invalid data.
 ---
 
 ## License
