@@ -61,6 +61,29 @@ python etl_pipeline.py
 If any critical check fails, the pipeline raises an error to prevent loading invalid data.
 ---
 
+## Tier 2 — Incremental ETL with Change Detection
+
+**Full vs Incremental ETL Comparison**
+
+**Full Load:**
+
+- Rows processed: 100
+- Execution time: 0.38 seconds
+- Description: Processes all historical orders. Useful for the first run or when a complete refresh is needed. Takes longer as data grows.
+
+**Incremental Load:**
+
+- Rows processed: 0 (no new orders)
+- Execution time: ~0.01 seconds
+- Description: Only processes orders added since the last successful ETL run. Very fast, reduces database load and memory usage. Risk: only new data is processed; historical updates are ignored.
+
+**Observations / Tradeoffs:**
+
+- Full runs are reliable for complete historical aggregation but slower.
+- Incremental runs are efficient for ongoing ETL but require accurate metadata tracking (`etl_metadata`) to avoid missing new orders.
+- Incremental loading significantly reduces execution time when there are few or no new records.
+
+
 ## License
 
 This repository is provided for educational use only. See [LICENSE](LICENSE) for terms.
