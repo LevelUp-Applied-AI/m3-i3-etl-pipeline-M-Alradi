@@ -1,0 +1,30 @@
+{
+  "name": "customer_analytics",
+  "source_tables": ["customers", "orders", "order_items", "products"],
+  "joins": [
+    {"left": "orders", "right": "customers", "on": "customer_id"},
+    {"left": "orders", "right": "order_items", "on": "order_id"},
+    {"left": "order_items", "right": "products", "on": "product_id"}
+  ],
+  "filters": {
+    "orders": {"status": "!=cancelled"},
+    "order_items": {"quantity": "<=100"}
+  },
+  "aggregations": [
+    {"group_by": "customer_id", "metrics": {
+        "total_orders": {"func": "nunique", "column": "order_id"},
+        "total_revenue": {"func": "sum", "column": "line_total"},
+        "avg_order_value": {"func": "computed", "formula": "total_revenue / total_orders"},
+        "top_category": {"func": "max_by", "column": "line_total", "by": "category"}
+    }}
+  ],
+  "outputs": {
+    "postgres_table": "customer_analytics",
+    "csv_path": "output/customer_analytics.csv"
+  },
+  "validations": [
+    {"check": "not_null", "columns": ["customer_id", "customer_name"]},
+    {"check": "positive", "columns": ["total_revenue", "total_orders"]},
+    {"check": "no_duplicates", "columns": ["customer_id"]}
+  ]
+}
