@@ -1,0 +1,101 @@
+customer_id,customer_name,total_orders,total_revenue,avg_order_value,top_category
+1,Ahmad Al-Masri,9,1003.5,111.5,Electronics
+2,Fatima Al-Husseini,8,827.0,103.375,Sports
+3,Omar Khalifeh,6,751.5,125.25,Electronics
+4,Layla Abdallah,6,730.0,121.66666666666667,Books
+5,Khaled Nasser,8,930.5,116.3125,Clothing
+6,Rania Al-Khatib,6,666.5,111.08333333333333,Books
+7,Yousef Haddad,6,721.5,120.25,Electronics
+8,Noor Al-Jabari,6,801.0,133.5,Books
+9,Tariq Obeidat,7,806.5,115.21428571428571,Home & Garden
+10,Hana Suleiman,6,750.0,125.0,Books
+11,Sami Al-Rawashdeh,6,523.0,87.16666666666667,Clothing
+12,Dina Qasem,5,363.5,72.7,Clothing
+13,Mazen Tawalbeh,3,499.0,166.33333333333334,Clothing
+14,Rana Abu-Ghazaleh,3,371.0,123.66666666666667,Electronics
+15,Fadi Al-Zoubi,2,228.0,114.0,Food & Beverage
+16,Mona Batayneh,5,526.5,105.3,Clothing
+17,Waleed Shraideh,5,403.0,80.6,Clothing
+18,Lina Al-Omari,6,447.5,74.58333333333333,Clothing
+19,Ibrahim Jaradat,6,803.0,133.83333333333334,Electronics
+20,Samar Ababneh,7,1100.0,157.14285714285714,Electronics
+21,Hassan Smadi,4,530.5,132.625,Electronics
+22,Yasmin Al-Sharif,7,974.5,139.21428571428572,Clothing
+23,Basil Malkawi,7,685.5,97.92857142857143,Electronics
+24,Reem Gharaibeh,7,660.5,94.35714285714286,Clothing
+25,Nidal Fraihat,6,544.0,90.66666666666667,Books
+26,Asma Qudah,5,751.0,150.2,Electronics
+27,Zaid Al-Momani,7,932.0,133.14285714285714,Books
+28,Jumana Tarawneh,6,719.5,119.91666666666667,Home & Garden
+29,Rashid Al-Ajlouni,6,569.0,94.83333333333333,Books
+30,Nisreen Bakri,6,511.0,85.16666666666667,Electronics
+31,Ayman Daradkeh,6,745.0,124.16666666666667,Books
+32,Ghada Nsour,6,910.0,151.66666666666666,Electronics
+33,Mahmoud Al-Azza,8,908.0,113.5,Home & Garden
+34,Suha Masarweh,7,569.5,81.35714285714286,Clothing
+35,Raed Habashneh,5,436.0,87.2,Books
+36,Abeer Al-Tamimi,4,423.0,105.75,Clothing
+37,Muhannad Awamleh,2,127.0,63.5,Home & Garden
+38,Sawsan Majali,4,579.5,144.875,Books
+39,Tamer Zu'bi,8,873.0,109.125,Electronics
+40,Huda Al-Karaki,6,676.0,112.66666666666667,Books
+41,Osama Louzi,7,642.5,91.78571428571429,Books
+42,Rula Shobaki,7,715.0,102.14285714285714,Clothing
+43,Bilal Faouri,7,1003.5,143.35714285714286,Books
+44,Maysoon Al-Qadi,7,603.0,86.14285714285714,Clothing
+45,Wael Bani-Hani,7,750.5,107.21428571428571,Clothing
+46,Shireen Khasawneh,6,671.0,111.83333333333333,Clothing
+47,Adnan Rousan,6,514.0,85.66666666666667,Electronics
+48,Lubna Al-Hawari,6,630.5,105.08333333333333,Home & Garden
+49,Firas Dmour,6,699.0,116.5,Clothing
+50,Eman Shdeifat,7,789.5,112.78571428571429,Books
+51,Suhail Qtaishat,7,609.0,87.0,Home & Garden
+52,Dalal Abu-Rumman,4,629.0,157.25,Electronics
+53,Hazem Maayta,6,713.0,118.83333333333333,Books
+54,Najwa Al-Bdour,6,713.0,118.83333333333333,Clothing
+55,Amjad Halasa,5,490.0,98.0,Clothing
+56,Siham Majdalawi,3,145.5,48.5,Electronics
+57,Rafiq Ghawanmeh,5,499.5,99.9,Clothing
+58,Iman Al-Masalmeh,4,525.5,131.375,Books
+59,Kamal Sarhan,4,372.0,93.0,Home & Garden
+60,Tahani Toubasi,6,600.5,100.08333333333333,Books
+61,Nasr Rabadi,6,662.5,110.41666666666667,Home & Garden
+62,Wafa Al-Harahsheh,5,524.0,104.8,Clothing
+63,Jalal Theibat,5,763.0,152.6,Electronics
+64,Kholoud Bani-Ata,3,202.0,67.33333333333333,Clothing
+65,Nayef Zu'mot,5,501.0,100.2,Clothing
+66,Ahlam Bataineh,3,314.0,104.66666666666667,Food & Beverage
+67,Ragheb Al-Dabbas,3,308.0,102.66666666666667,Books
+68,Fidaa Obaidat,3,408.0,136.0,Books
+69,Munther Bsoul,3,323.5,107.83333333333333,Clothing
+70,Haneen Khreisat,2,169.0,84.5,Clothing
+71,Saleem Tahat,1,73.0,73.0,Books
+72,Rawia Al-Fugaha,2,258.0,129.0,Books
+73,Imad Dmaiseh,2,140.5,70.25,Clothing
+74,Zeinab Shnikat,2,131.5,65.75,Books
+75,Amer Saraireh,3,279.0,93.0,Electronics
+76,Buthayna Quraan,1,107.0,107.0,Books
+77,Hamzeh Al-Btoush,2,192.0,96.0,Clothing
+78,Mayada Tal,2,226.0,113.0,Home & Garden
+79,Shaker Hijazeen,2,159.0,79.5,Home & Garden
+80,Lamis Rababah,2,316.0,158.0,Home & Garden
+81,Bashar Al-Adwan,3,295.5,98.5,Clothing
+82,Tamam Khreisha,2,369.0,184.5,Books
+83,Ismail Hmoud,2,198.0,99.0,Electronics
+84,Sabah Nsairat,1,64.0,64.0,Clothing
+85,Qais Al-Fayez,2,130.0,65.0,Home & Garden
+86,Mais Qawasmeh,2,122.5,61.25,Sports
+87,Baraa Otoum,1,51.0,51.0,Electronics
+88,Thuraya Al-Madi,2,254.0,127.0,Books
+89,Haitham Krishan,2,204.0,102.0,Clothing
+90,Nawal Fayyad,2,260.0,130.0,Electronics
+91,Mutaz Al-Shawabkeh,1,165.0,165.0,Electronics
+92,Rim Bani-Khaled,2,264.0,132.0,Books
+93,Saif Majeed,2,140.5,70.25,Clothing
+94,Arwa Hajjaj,2,160.0,80.0,Home & Garden
+95,Nasser Al-Dhoon,2,132.5,66.25,Electronics
+96,Duha Atiyat,2,444.0,222.0,Books
+97,Samer Jaber,2,191.0,95.5,Clothing
+98,Laith Al-Khalidi,2,195.0,97.5,Home & Garden
+99,Farah Hamaydeh,2,231.0,115.5,Clothing
+100,Yazan Bani-Mustafa,1,81.0,81.0,Home & Garden

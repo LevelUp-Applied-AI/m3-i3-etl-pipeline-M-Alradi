@@ -2,3 +2,4 @@ psycopg[binary]
 sqlalchemy
 pandas
 pytest
+psycopg2-binary
